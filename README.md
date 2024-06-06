@@ -25,21 +25,24 @@ Determine if the email contains “@jira” to identify the emails that need to 
 If “@jira” is found, use the jira library to create a ticket in Jira. This step involves setting up your Jira credentials and defining the project details where the ticket should be created.
 
 ## Getting a Jira API Token
-To get an API token for Jira:
-
-### 1. Log in to your Jira account.
-### 2. Navigate to the Atlassian account settings: Click on your profile icon and select “Account settings”.
-### 3. Go to the Security tab: Select “API token” from the left sidebar.
-### 4. Create a new API token: Click on “Create API token”, give it a label, and click “Create”.
-### 5. Copy the API token: Save it securely as you will use it in your script.
+### To get an API token for Jira:
+1. Log in to your Jira account.
+2. Navigate to the Atlassian account settings: Click on your profile icon and select “Account settings”.
+3. Go to the Security tab: Select “API token” from the left sidebar.
+4. Create a new API token: Click on “Create API token”, give it a label, and click “Create”.
+5. Copy the API token: Save it securely as you will use it in your script.
 
 ## Finding the Project Key
-The project key is a unique identifier for your Jira project. You can find it:
-### 1. Go to your Jira project: Navigate to the project in Jira.
-### 2. Check the URL or project settings: The project key is often visible in the URL (e.g., https://your-domain.atlassian.net/projects/PROJECT_KEY). By default, the project key is “TF”
-Result
-### 3. To demonstrate the result, I am going to send an email to my inbox with “@jira” in the Body. This script, which runs every 2 seconds, will identify this email and immediately create a ticket on Jira. See the screenshot below:
+### The project key is a unique identifier for your Jira project. You can find it:
+1. Go to your Jira project: Navigate to the project in Jira.
+2. Check the URL or project settings: The project key is often visible in the URL (e.g., https://your-domain.atlassian.net/projects/PROJECT_KEY). By default, the project key is “TF”
 
+# Result
+To demonstrate the result, I am going to send an email to my inbox with “@jira” in the Body. This script, which runs every 2 seconds, will identify this email and immediately create a ticket on Jira. See the screenshot below:
+
+![image](https://github.com/EzeChinedumUchenna/Automate-Jira-Ticket-Creation-from-Outlook-using-Python/assets/102483586/a30bd46d-eaba-45f7-b50f-a61c1807366f)
+![image](https://github.com/EzeChinedumUchenna/Automate-Jira-Ticket-Creation-from-Outlook-using-Python/assets/102483586/335849f4-1948-4386-9518-6aaba4be8a82)
+![image](https://github.com/EzeChinedumUchenna/Automate-Jira-Ticket-Creation-from-Outlook-using-Python/assets/102483586/4f1d5a80-f495-4853-a2b9-050310e7263c)
 
 ### Conclusion
 By automating the creation of Jira tickets from Outlook emails, this Python script helps support teams save valuable time and focus on resolving issues more efficiently. This article provided an overview of how to set up the integration, parse emails, check for specific keywords, and create Jira tickets automatically.
